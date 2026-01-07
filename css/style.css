@@ -7,41 +7,109 @@
 
 body {
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #334155;
+    background-color: #f8fafc;
 }
 
+/* Header & navigation */
 header {
-    background-color: #1e293b;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
     color: white;
-    padding: 40px 20px;
-    text-align: center;
+    padding-bottom: 60px;
 }
 
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-main {
+.nav {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.btn-nav {
+    background-color: #38bdf8;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #0f172a !important;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px 0;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;          /* ESPACE AVEC LE TEXTE AU-DESSUS */
+    padding: 14px 26px;
+
+    line-height: 1;            /* FIX chevauchement */
+    white-space: nowrap;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #1e293b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 h2 {
-    color: #1e293b;
-    margin-bottom: 10px;
+    color: #0f172a;
+    margin-bottom: 15px;
 }
 
-/* Sections avec images */
+/* Sections images */
 .section-image {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -52,22 +120,15 @@ h2 {
 .section-image img {
     width: 100%;
     max-width: 450px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-/* Texte */
-.section-image div {
-    flex: 1;
+/* Contact */
+.contact {
+    text-align: center;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
+/* Footer */
 footer {
     background-color: #e5e7eb;
     text-align: center;
@@ -77,6 +138,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+    }
 
     .section-image,
     .section-image.reverse {
@@ -84,11 +153,80 @@ footer {
         text-align: center;
     }
 
-    .section-image img {
-        max-width: 100%;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
+    .hero h1 {
+        font-size: 1.9rem;
     }
 }
+
+/* ===== MENU BURGER ===== */
+
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Fix bouton contact */
+.btn-nav {
+    margin-left: 20px;
+    padding: 10px 16px;
+    line-height: normal;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #0f172a;
+        margin-top: 15px;
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .btn-nav {
+        margin: 10px auto 0;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        align-items: center; /* CENTRE TOUT LE CONTENU */
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-nav {
+        width: fit-content;
+        margin: 12px auto 0; /* CENTRAGE DU BOUTON */
+    }
+}
+

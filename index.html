@@ -2,101 +2,124 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-
     <title>Développeur Freelance à Caen | Création de sites web & SEO</title>
 
-    <meta name="description" content="Développeur freelance à Caen spécialisé en création de sites web modernes, SEO et solutions sur mesure pour entreprises et indépendants en Normandie.">
-
+    <meta name="description" content="Développeur freelance à Caen spécialisé en création de sites web modernes, SEO local et solutions sur mesure pour entreprises et indépendants.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="canonical" href="https://developpeur-freelance-caen.vercel.app/">
-    
+
     <meta property="og:title" content="Développeur freelance à Caen – Création de sites web & SEO">
-    <meta property="og:description" content="Développeur web freelance à Caen spécialisé dans la création de sites web modernes, SEO et solutions sur mesure.">
+    <meta property="og:description" content="Création de sites web modernes et optimisation SEO à Caen">
     <meta property="og:image" content="https://developpeur-freelance-caen.vercel.app/images/developpeur-caen.jpg">
     <meta property="og:url" content="https://developpeur-freelance-caen.vercel.app/">
-    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
 
 <header>
-    <h1>Développeur freelance à Caen</h1>
-    <p>Création de sites web performants et optimisés SEO</p>
+    <nav class="nav">
+        <div class="logo">Dev Caen Tom Gilbard</div>
+
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#seo">SEO</a>
+            <a href="#about">À propos</a>
+            <a href="#contact" class="btn-nav">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="hero">
+        <h1>Développeur freelance à Caen</h1>
+        <p>Création de sites web modernes, rapides et optimisés pour Google</p>
+        <a href="#contact" class="btn-primary">Demander un devis</a>
+    </div>
 </header>
 
 <main>
 
-    <section class="section-image">
-        <img 
-            src="images/image-dev-web-caen.jpg"
-            alt="Développement"
-            loading="lazy">
-        <div>
-            <h2>Développeur web freelance à Caen</h2>
-            <p>
-                Je suis tom gilbard <strong>développeur freelance à Caen</strong>, spécialisé dans la création
-                de sites web modernes, rapides et optimisés pour le référencement naturel.
-                J’accompagne les entreprises locales dans leur visibilité en ligne.
-            </p>
-        </div>
-    </section>
-
-    <section class="section-image reverse">
-        <img 
-            src="images/site_web.jpg"
-            alt="Création de site internet professionnel en HTML et CSS"
-            loading="lazy">
-        <div>
-            <h2>Création de sites web professionnels</h2>
-            <ul>
-                <li>Sites vitrines modernes</li>
-                <li>Développement HTML, CSS et JavaScript</li>
-                <li>Design responsive et accessible</li>
-                <li>Optimisation des performances</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section-image">
-        <img 
-            src="images/s_e_o.jpg"
-            alt="Optimisation SEO local à Caen pour entreprises"
-            loading="lazy">
-        <div>
-            <h2>SEO local à Caen</h2>
-            <p>
-                Chaque site est conçu pour le <strong>SEO local à Caen</strong> :
-                structure sémantique propre, contenu de qualité et compatibilité mobile.
-                Objectif : apparaître dans les résultats Google locaux.
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Pourquoi choisir un développeur freelance à Caen ?</h2>
+<section id="about" class="section-image">
+    <img src="images/image-dev-web-caen.jpg" alt="Développeur web à Caen" loading="lazy">
+    <div>
+        <h2>Développeur web freelance à Caen</h2>
         <p>
-            Travailler avec un <strong>freelance local</strong> permet une meilleure communication,
-            une grande réactivité et un accompagnement personnalisé.
-            Je propose des solutions sur mesure adaptées à vos besoins réels.
+            Je suis <strong>Tom Gilbard</strong>, développeur web freelance basé à Caen.
+            J’aide les entreprises, artisans et indépendants à créer une présence en ligne
+            professionnelle et efficace.
         </p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
         <p>
-            Vous avez un projet web à Caen ou en Normandie ?
-            Contactez votre <strong>développeur freelance à Caen</strong>
-            pour discuter de votre site internet ou de votre stratégie SEO.
+            Mon objectif : un site rapide, clair et visible sur Google.
         </p>
-    </section>
+    </div>
+</section>
+
+<section id="services" class="section-image reverse">
+    <img src="images/site_web.jpg" alt="Création de site internet professionnel" loading="lazy">
+    <div>
+        <h2>Création de sites web professionnels</h2>
+        <ul>
+            <li>Sites vitrines modernes</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive mobile, tablette et desktop</li>
+            <li>Performance et accessibilité</li>
+            <li>Maintenance et évolution possible</li>
+        </ul>
+        <a href="#contact" class="btn-secondary">Parlons de votre projet</a>
+    </div>
+</section>
+
+<section id="seo" class="section-image">
+    <img src="images/s_e_o.jpg" alt="SEO local à Caen" loading="lazy">
+    <div>
+        <h2>SEO local à Caen</h2>
+        <p>
+            Chaque site est conçu pour le <strong>référencement naturel</strong> :
+            balises optimisées, structure sémantique propre et contenu ciblé.
+        </p>
+        <p>
+            Le SEO local permet d’apparaître dans les recherches Google autour de Caen
+            et d’attirer des clients qualifiés.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Pourquoi me faire confiance ?</h2>
+    <p>
+        En tant que <strong>freelance local à Caen</strong>, je propose un accompagnement personnalisé,
+        une communication simple et des solutions adaptées à votre budget.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+        Vous avez un projet web en Normandie ?
+        Discutons ensemble de votre site internet ou de votre stratégie SEO.
+    </p>
+    <a href="mailto:contact@exemple.fr" class="btn-primary">Me contacter</a>
+</section>
 
 </main>
 
 <footer>
     <p>© 2026 – Développeur freelance à Caen</p>
 </footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
 </body>
 </html>
